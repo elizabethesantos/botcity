@@ -1,0 +1,4 @@
+selenium==3.141.0
+botcity-framework-web==0.8.3
+webdriver-manager==4.0.0
+botcity-maestro-sdk==0.4.1
