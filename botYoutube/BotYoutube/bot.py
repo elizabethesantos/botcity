@@ -40,10 +40,13 @@ def main():
     print(f"Task Parameters are: {execution.parameters}")
 
     bot = DesktopBot()
-    bot.browse("http://www.botcity.dev")
+    # Opens Google YouTube channel
+    bot.browse("https://www.youtube.com/@google")
 
     # Implement here your logic...
-    ...
+    if not bot.find( "ABOUT", matching=0.97, waiting_time=10000):
+        not_found("ABOUT")
+    bot.click()
 
     # Uncomment to mark this task as finished on BotMaestro
     # maestro.finish_task(
@@ -58,3 +61,4 @@ def not_found(label):
 
 if __name__ == '__main__':
     main()
+
