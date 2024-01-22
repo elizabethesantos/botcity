@@ -1,0 +1,1 @@
+Compress-Archive -LiteralPath . -DestinationPath "bot-consulta-cep.zip" -Force
